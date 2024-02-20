@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'); 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+  }  
+
+  body{
+    background: #020410;
+  }
+
+
+/*.search-bar{
+  width: 250px;
+  height: 45px;
+  background: transparent;
+  border: 2px solid #e4e4e4;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input{
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #e4e4e4;
+  padding-left: 10px;
+}
+
+.search-bar input::placeholder{
+  color: #e4e4e4;
+}
+
+.search-bar button {
+  width: 40px;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.search-bar button i{
+  font-size: 22px;
+  color: #e4e4e4;
+
+}*/
+
+.background{
+  width: 100%;
+  height: 100vh;
+  background: url('../img/UNI.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+}
+
+.container1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 650px;
+  background: #e4e4e4;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.container1 .content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 58%;
+  height: 100%;
+  background: transparent;
+  padding: 80px;
+  color: #0C2840;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.container1 .content .h2{
+  color: #0C2840;
+}
+
+.container1 .logreg-box{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 58%);
+  height: 100%;
+}
+
+.logreg-box .form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #0C2840;
+  backdrop-filter: blur(20px);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #e4e4e4;
+
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%; 
+}
+
+.form-box h2 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-box .input-box {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  border-bottom: 2px solid #e4e4e4;
+  margin: 30px 0;
+}
+
+.form-box .login-register {
+  font-size: 14.5px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.form-box .iconunl {
+  width: 180px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.input-box {
+  position: relative;
+  margin: 30px 0;
+}
+
+.input-box input{
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #e4e4e4;
+  font-weight: 500;
+  padding-right: 28px;
+}
+
+
+.input-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.input-box label.active {
+  top: -15px;
+  left: 0;
+}
+
+
+.input-box .icon{
+  position: absolute;
+  top: 13px;
+  right: 0;
+  font-size: 20px;
+}
+
+.content .text{
+  font-size: 35px;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.textoBienve{
+  font-size: 30px;
+  line-height: 1;
+  font-weight: bold;
+
+}
+
+.parrafoInfo{
+  font-size: 20px;
+  
+}
+
+.parrafo{
+  font-size: 14px;
+  margin: 40px 0;
+  text-align: justify;
+}
+
+.login-register p a{
+  color: #e4e4e4;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-register p a:hover{
+  text-decoration: underline;
+}
+
+.boton-login button{
+  width: 100%;
+  height: 45px;
+  background: #e4e4e4;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #0C2840;
+  font-weight: 500;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.mensajeerror {
+  font-size: 13px;
+  color: #c71700;
+  font-weight:bolder;
+  border-radius: 4px;
+  font-style: italic;
+}
+
+/*RESPONSIVIDAD*/
+
+@media (max-width: 900px) {
+  .container1 {
+    position: center;
+    width: 100%; 
+    max-width: 600px; 
+    height: 60vh; 
+}
+
+  .container1 .content {
+      display: none; 
+  }
+
+  .container1, .container1 .logreg-box {
+      width: 100%; 
+      position: center; 
+      height: 60vh; 
+  }
+
+  .form-box {
+      justify-content: center;
+      height: auto;
+  }
+
+  .input-box {
+      width: 90%; 
+  }
+
+  .form-box h2 {
+      font-size: 24px;
+  }
+
+  .background {
+      display: block; 
+  }
+}
+
+
+

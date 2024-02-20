@@ -1,0 +1,133 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Ajusta la altura según tus necesidades */
+}
+
+.abierto {
+    border-color: #2f2d2e;
+    /* Cambia el color del borde cuando la tarjeta está abierta */
+}
+
+.containerWrapperVerP {
+    width: 100%;
+    height: 100%;
+    background: #E4E4E4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contentYovin1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 650px;
+    background: #ffffff;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentYovin1 .contentYovin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    padding: 70px;
+    color: #0C2840;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.contentYovin .contentYovin .users-container {
+    background: #E4E4E4;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    /* Ajusta el valor según sea necesario */
+    padding: 10px;
+    /* Ajusta el valor según sea necesario */
+    cursor: pointer;
+    /* Añade un cursor al elemento */
+    transition: border-color 0.3s ease;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.backgroundYovin{
+  width: 100%;
+  height: 100vh;
+  background: url('../img/UNI.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+}
+
+/* Agrega este estilo para personalizar las tarjetas de petición */
+.peticion-card {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.peticion-card:hover {
+    border-color: #2f2d2e;
+}
+
+.titulo-peticiones {
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    /* Agrega otros estilos según sea necesario */
+}
+
+/* Agrega estos estilos a tu archivo CSS */
+.boton-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .aceptar-boton,
+  .rechazar-boton {
+    border: 2px solid #000000;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .aceptar-boton {
+    margin-right: 10px;
+    background-color: #3bad71;
+  }
+  
+  .rechazar-boton {
+    margin-left: 10px;
+    background-color: #cd3e36;
+  }
+  
+  /* Media query para hacer los botones más pequeños en pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .aceptar-boton,
+    .rechazar-boton {
+      padding: 0px 5px;
+      font-size: 14px;
+    }
+  }
+  
